@@ -1,4 +1,4 @@
-package com.market.kurly;
+package com.kurly.market;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +13,7 @@ public class HomeController {
 	
 	@RequestMapping(value = "/")
 	public String main(Model model) {
+		model.addAttribute("formpath", "main");
 		return "index";
 	}
 	

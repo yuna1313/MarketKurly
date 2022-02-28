@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,42 +13,6 @@
 
 	<div id="main">
 		<div id="content">
-			<div id="qnb" class="quick-navigation" style="top: 516px;">
-				<div class="bnr_qnb" id="brnQuick">
-					<a href="/shop/board/view.php?id=notice&amp;no=64" id="brnQuickObj">
-						<img class="thumb" src="https://res.kurly.com/pc/service/main/1904/bnr_quick_20190403.png" alt="퀄리티있게 샛별배송">
-					</a>
-				</div>
-				
-				<div class="side_menu">
-					<a href="/shop/main/html.php?htmid=event/kurly.htm&amp;name=lovers"
-						class="link_menu ">등급별 혜택</a> <a
-						href="/shop/board/list.php?id=recipe" class="link_menu ">레시피</a> <a
-						href="/shop/goods/goods_review_best.php" class="link_menu ">베스트
-						후기</a>
-				</div>
-				<div class="side_recent" style="">
-					<strong class="tit">최근 본 상품</strong>
-					<div class="list_goods" data-height="209" style="height: 80px;">
-						<ul class="list">
-							<li><a class="link_goods"
-								href="/shop/goods/goods_view.php?goodsno=60785"><img
-									src="https://img-cf.kurly.com/shop/data/goods/1604989499976y0.jpg"
-									alt=""></a></li>
-						</ul>
-					</div>
-					<button type="button" class="btn btn_up off">최근 본 상품 위로
-						올리기</button>
-					<button type="button" class="btn btn_down off">최근 본 상품 아래로
-						내리기</button>
-				</div>
-
-			</div>
-			
-			<div id="mainNotice">
-				<div id="mainNoticePop"></div>
-			</div>
-
 			<div id="kurlyMain" class="page_main">
 				<div class="css-l4pnbr e150tpdg0">
 					<div class="css-0 e1hbq1i00">
@@ -377,28 +342,17 @@
 												<div class="ListSwiper css-1y0s8v2 e1ys67gq4">
 													<div class="slick-slider slick-initialized" dir="ltr">
 														<div class="slick-list">
-															<div class="slick-track"
-																style="width: 5340px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
-																<div data-index="0"
-																	class="slick-slide slick-active slick-current"
-																	tabindex="-1" aria-hidden="false"
-																	style="outline: none; width: 267px;">
+															<div class="slick-track" style="width: 5340px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+																<div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 267px;">
 																	<div>
-																		<div
-																			class="SliderItem currentSlide css-109sxf0 e1ys67gq3"
-																			tabindex="-1"
-																			style="width: 100%; display: inline-block;">
+																		<div class="SliderItem currentSlide css-109sxf0 e1ys67gq3" tabindex="-1" style="width: 100%; display: inline-block;">
 																			<div class="css-0 ee57w0b0">
 																				<div class="css-0 e97c0gb0">
 																					<div class="Thumbnail css-1usngog erwlrj82">
-																						<a
-																							href="/shop/goods/goods_view.php?&amp;goodsno=3348"
-																							class="css-13sxcdl erwlrj81"
-																							style="width: 249px; height: 320px;"><img
-																							class="erwlrj80 css-4jombx ebkj6fl0"
-																							src="https://img-cf.kurly.com/shop/data/goods/1464056216521l0.jpg"
-																							alt="[조선호텔김치] 오이소박이" loading="lazy">
-																							<div class="css-8msfms e14imjkq0"></div></a>
+																						<a href="/shop/goods/goods_view.php?&amp;goodsno=3348" class="css-13sxcdl erwlrj81" style="width: 249px; height: 320px;">
+																							<img class="erwlrj80 css-4jombx ebkj6fl0" src="https://img-cf.kurly.com/shop/data/goods/1464056216521l0.jpg" alt="[조선호텔김치] 오이소박이" loading="lazy">
+																							<div class="css-8msfms e14imjkq0"></div>
+																						</a>
 																						<div class="css-1a83kvf em4wzeq1">
 																							<button class="css-1m1ntoc em4wzeq0">
 																								<img
